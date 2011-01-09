@@ -1,0 +1,6 @@
+<h1> Listing All Page Views </h1>
+<ul id="records">
+  <% @records.each do |record| %>
+  <li> <%= record.userid.to_s + " viewed page " +  record.pageid.to_s + " at " + record.created_at.to_s %>  </li>
+  <% end %>
+</ul>
